@@ -1,0 +1,149 @@
+# 修改uid gid
+## 查看已使用的uid
+cat /etc/passwd | perl -ne 'chomp;$_ =~ /(.*):x:(\d+):(\d+):.*:\/.*/;print "$1\t$2\t$3\n"'
+
+usermod -u 1000 zhangy2
+groupmod -g 1000 zhangy2
+
+
+
+#=======================================================================
+# 				centos7 安装fonts
+#=======================================================================
+# 试用场景， R或者其他软件，字体找不到，生成乱码/方框
+
+
+sudo yum  install fontconfig # 安装字体管理
+# 将字体库.tff上传至 /usr/share/fonts # 可以新建目录，改权限755
+# sudo yum  install ttmkfdir # 安装
+fc-cache -f # 刷新字体库
+
+
+
+
+
+#=======================================================================
+#					服务器不常用的命令
+#=======================================================================
+
+## 挂载相关
+### 挂载命令
+首先查看要挂载的移动硬盘的信息
+```bash
+lsblk -f # 查看硬盘格式
+fdisk -l # 查看大小等
+# 挂载
+mount -t ntfs-3g /dev/sdc1 /mnt
+# 卸载
+umount /mnt
+```
+### 挂载相关报错
+#### exFat格式
+```
+# 如果没有安装，需要进行如下操作
+sudo yum install epel-release
+sudo rpm -v --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+sudo yum install exfat-utils fuse-exfat
+```
+
+
+# 开机启动脚本
+/etc/rc.local
+
+### for network: /bin/cp -f /home/workspace/software/resolv.conf /etc/resolv.conf
+
+# update date  yum install ntp
+yes | cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ntpdate us.pool.ntp.org
+
+
+
+# 用户创建
+
+
+
+# 总核数 = 物理CPU个数 X 每颗物理CPU的核数
+# # 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数
+
+# # 查看物理CPU个数
+cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+
+# # 查看每个物理CPU中core的个数(即核数)
+cat /proc/cpuinfo| grep "cpu cores"| uniq
+
+# # 查看逻辑CPU的个数
+cat /proc/cpuinfo| grep "processor"| wc -l
+
+
+
+#打开配置文件
+vi /etc/sysconfig/iptables
+
+#添加
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT
+
+#重启防火墙，修改完成
+service iptables restart
+
+#5、查看端口状态
+/etc/init.d/iptables status
+
+# 查看端口
+lsof -i tcp:8080
+
+# 列除端口
+netstat -ntlp
+
+# 查看系统版本
+cat /etc/issue
+cat /etc/*-release
+cat /proc/version
+uname -a
+
+
+# rstudio-server
+sudo fuser 8787/tcp
+sudo fuser -k 8787/tcp
+sudo rstudio-server start
+
+
+## 更换yum源
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-6.repo
+sed -i -e '/mirrors.cloud.aliyuncs.com/d' -e '/mirrors.aliyuncs.com/d' /etc/yum.repos.d/CentOS-Base.repo
+sed -i  's/http/https/g' /etc/yum.repos.d/CentOS-Base.repo
+sed -i  's/$releasever/6.8/g' /etc/yum.repos.d/CentOS-Base.repo
+sed -i  's/centos/centos-vault/g' /etc/yum.repos.d/CentOS-Base.repo
+
+
+
+
+#=======================================================================
+# 				centos7 安装rstudio-server
+#=======================================================================
+wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-1.4.1106-x86_64.rpm
+sudo yum install rstudio-server-rhel-1.4.1106-x86_64.rpm
+
+
+#-------配置1
+cat /etc/rstudio
+
+# Server Configuration File
+## /etc/rstudio/rserver.conf
+www-port=9999
+www-address=0.0.0.0
+rsession-which-r=/share/data1/software/miniconda3/envs/r4.0/bin/R
+rsession-ld-library-path=/share/data1/software/miniconda3/envs/r4.0/lib
+
+#-------配置2
+# R Session Configuration File
+## /etc/rstudio/rsession.conf
+
+www-port=9999
+www-address=0.0.0.0
+
+sudo rstudio-server start # restart
+sudo rstudio-server status
+
+

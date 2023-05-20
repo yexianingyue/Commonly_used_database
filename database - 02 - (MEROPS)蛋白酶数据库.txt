@@ -1,0 +1,2 @@
+主网站在这： https://www.ebi.ac.uk/merops/
+数据库下载在这：http://ftp.ebi.ac.uk/pub/databases/merops/current_release/pepunit.lib  # 截止在2020-04-10日 还有效， 往后就需要自己去网站主页寻找了

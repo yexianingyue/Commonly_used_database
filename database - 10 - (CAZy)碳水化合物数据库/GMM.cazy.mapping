@@ -1,0 +1,102 @@
+GMMs	Name	KO	HL1	HL2	Position
+CA001	chondroitin sulphate degradation	GH88	host-derived glycan metabolism	glycoprotein degradation	input
+CA001	chondroitin sulphate degradation	PL8	host-derived glycan metabolism	glycoprotein degradation	input
+CA002	heparin/heparan sulphate  degradation	GH88	host-derived glycan metabolism	glycoprotein degradation	input
+CA002	heparin/heparan sulphate  degradation	PL15	host-derived glycan metabolism	glycoprotein degradation	input
+CA002	heparin/heparan sulphate  degradation	PL12	host-derived glycan metabolism	glycoprotein degradation	input
+CA002	heparin/heparan sulphate  degradation	PL13	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH2	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH33	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH20	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH42	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH29	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH112	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH129	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH101	host-derived glycan metabolism	glycoprotein degradation	input
+CA003	mucin degradation	GH95	host-derived glycan metabolism	glycoprotein degradation	input
+CA004	cellulose degradation	GH48	plant-derived dietary glycan metabolism	cellulose  degradation	input
+CA004	cellulose degradation	GH9	plant-derived dietary glycan metabolism	cellulose  degradation	input
+CA004	cellulose degradation	GH5	plant-derived dietary glycan metabolism	cellulose  degradation	input
+CA004	cellulose degradation	GH44	plant-derived dietary glycan metabolism	cellulose  degradation	input
+CA004	cellulose degradation	GH45	plant-derived dietary glycan metabolism	cellulose  degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH3	plant-derived dietary glycan metabolism	xylan degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH30	plant-derived dietary glycan metabolism	xylan degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH98	plant-derived dietary glycan metabolism	xylan degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH43	plant-derived dietary glycan metabolism	xylan degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH115	plant-derived dietary glycan metabolism	xylan degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH95	plant-derived dietary glycan metabolism	xylan degradation	input
+CA005	complex glucuronorabinoxylan degradation	GH31	plant-derived dietary glycan metabolism	xylan degradation	input
+CA006	arabinoxylan degradation	GH43	plant-derived dietary glycan metabolism	xylan degradation	input
+CA006	arabinoxylan degradation	GH3	plant-derived dietary glycan metabolism	xylan degradation	input
+CA006	arabinoxylan degradation	GH10	plant-derived dietary glycan metabolism	xylan degradation	input
+CA007	glucuronoxylan degradation	GH43	plant-derived dietary glycan metabolism	xylan degradation	input
+CA007	glucuronoxylan degradation	GH67	plant-derived dietary glycan metabolism	xylan degradation	input
+CA007	glucuronoxylan degradation	GH10	plant-derived dietary glycan metabolism	xylan degradation	input
+CA008	homogalacturonan degradation	GH105	plant-derived dietary glycan metabolism	pectin degradation	input
+CA008	homogalacturonan degradation	CE8	plant-derived dietary glycan metabolism	pectin degradation	input
+CA008	homogalacturonan degradation	PL1	plant-derived dietary glycan metabolism	pectin degradation	input
+CA008	homogalacturonan degradation	GH28	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH95	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH2	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH141	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH138	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH78	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH140	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH43	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH28	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	PL1	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH105	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH143	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH142	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH33	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH127	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH139	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH106	plant-derived dietary glycan metabolism	pectin degradation	input
+CA009	rhamnogalacturonan II degradation	GH137	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH43	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH53	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH2	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH35	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH51	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH105	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	PL4	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	PL11	plant-derived dietary glycan metabolism	pectin degradation	input
+CA010	rhamnogalacturonan I degradation	GH127	plant-derived dietary glycan metabolism	pectin degradation	input
+CA011	arabinogalactan degradation	PL27	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA011	arabinogalactan degradation	GH145	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA011	arabinogalactan degradation	GH105	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA011	arabinogalactan degradation	GH27	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA011	arabinogalactan degradation	GH51	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA011	arabinogalactan degradation	GH43	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA011	arabinogalactan degradation	GH30	plant-derived dietary glycan metabolism	arabinogalactan protein  degradation	input
+CA012	starch/glycogen degradation	GH13	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA012	starch/glycogen degradation	GH31	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA012	starch/glycogen degradation	GH57	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA012	starch/glycogen degradation	GH14	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA012	starch/glycogen degradation	GH15	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA012	starch/glycogen degradation	GH77	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA012	starch/glycogen degradation	GH119	plant/host-derived glycan metabolism	starch/glycogen degradation	input
+CA013	Endo-Inulinase	GH32	Inulin		zy
+CA013	Exo-Inulinase	GH32	Inulin		zy
+CA013	Inulinlyase	GH91	Inulin		zy
+CA013	InulinBindingModule	CBM38	Inulin		zy
+CA014	Beta-mannosidase	GH1	Hemicellulose-Mannan		zy
+CA014	Beta-mannosidase	GH2	Hemicellulose-Mannan		zy
+CA014	Beta-mannosidase	GH5	Hemicellulose-Mannan		zy
+CA014	Mannanendo-Beta-1,4-mannosidase	GH5	Hemicellulose-Mannan		zy
+CA014	Mannanendo-Beta-1,4-mannosidase	GH9	Hemicellulose-Mannan		zy
+CA014	Mannanendo-Beta-1,4-mannosidase	GH26	Hemicellulose-Mannan		zy
+CA014	Mannanendo-Beta-1,4-mannosidase	GH44	Hemicellulose-Mannan		zy
+CA014	Mannanendo-Beta-1,4-mannosidase	GH113	Hemicellulose-Mannan		zy
+CA014	Mannanendo-Beta-1,4-mannosidase	GH134	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM13	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM16	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM23	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM27	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM29	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM35	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM59	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM62	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM72	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM76	Hemicellulose-Mannan		zy
+CA014	MannanBindingModules	CBM80	Hemicellulose-Mannan		zy

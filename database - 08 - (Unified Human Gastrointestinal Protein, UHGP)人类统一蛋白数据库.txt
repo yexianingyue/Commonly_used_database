@@ -1,0 +1,5 @@
+cite:
+	https://www.nature.com/articles/s41587-020-0603-3#data-availability
+
+download path:
+	http://ftp.ebi.ac.uk/pub/databases/metagenomics/mgnify_genomes/human-gut/v2.0/protein_catalogue/

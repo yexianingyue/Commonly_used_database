@@ -1,0 +1,8 @@
+https://github.com/statgen/bamUtil
+
+make cloneLib
+
+make #CFLAGS=-std=c++11
+make install INSTALLDIR=pathToInstall
+
+#make LIB_PATH_GENERAL=/share/data1/zhangy/software/bamutil/libStatGen  CFLAGS=-std=c++11

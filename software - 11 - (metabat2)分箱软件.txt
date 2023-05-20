@@ -1,0 +1,75 @@
+官方地址：
+https://bitbucket.org/berkeleylab/metabat/src/master/INSTALL.md
+我用的centos8， 别的系统大家自己参照就行
+
+
+
+## metabat 本尊安装
+这里只讲编译安装方法
+
+```bash
+git clone https://bitbucket.org/berkeleylab/metabat.git # 这个东西，随便怎么下载都行，浏览器、迅雷、git...
+cd metabat
+mkdir build 
+cd build
+# cmake 这边如果是手动安装的，需要使用绝对路径
+cmake -DCMAKE_INSTALL_PREFIX=$HOME/metabat ..
+make
+make install
+cd ..
+rm -rf build
+```
+
+
+
+## 依赖软件
+
+百度格式， “cenots 8 how to install llvm...”
+
+```bash
+gcc/g++ >= 4.9 or intel >= 18.0.1 or llvm >= 8.0
+boost >= 1.53
+cmake >= 3.8.2
+make >= 4.1
+# yum install zlib gcc g++ ...
+```
+遇到版本不对，自己查找 “ xx 使用 xx 安装 xx版本”，这只是个例子，自己变通
+
+### 手动安装boost
+对于boost,版本的话自己去挑https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/
+如果wget速度慢，自己用浏览器下载然后上传就行
+
+```bash
+wget https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz
+tar xf boost_1_75_0.tar.gz
+cd boost_1_75_0
+./bootstrap.sh \
+  --libdir=/usr/local/lib64 \
+  --with-libraries=system,thread,test,chrono,regex,date_time,filesystem,locale,random,atomic,log,program_options,exception,serialization,iostreams,graph
+./b2 -j 8
+sudo ./b2 install
+```
+
+### 手动安装cmake
+官网： https://cmake.org/files/
+我自己下载了v3.24，其他版本自己找
+```bash
+wget https://cmake.org/files/v3.24/cmake-3.24.0-linux-x86_64.tar.gz
+tar -zxvf cmake-3.24.0-linux-x86_64.tar.gz
+cmake-3.24.0-linux-x86_64/bin/cmake # 这个就是可执行文件
+```
+
+### htslib
+https://github.com/samtools/htslib/releases
+
+这个包会下载到这，手动下载到这试试
+metabat2/build/contrib/htslib-prefix/src
+
+下载解压后按照`INSTALL`提示操作就行
+```bash
+./configure # --prefix=DIR 可以设置安装路径
+make
+make install
+```
+
+

@@ -1,0 +1,6 @@
+- Intro: BacMet 抗杀菌剂基因和耐金属基因数据库 （人工检索和基于序列相似性预测）
+- Label: BRG; MRG; Biocide resistance gene; Metal resistance gene
+- Web: http://bacmet.biomedicine.gu.se/
+- Version: version 2.0; Last updated: 11 March 2018
+- DOI: 10.1093/nar/gkt1252
+- PMID: 24304895

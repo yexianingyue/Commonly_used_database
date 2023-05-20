@@ -1,0 +1,4 @@
+# Datasets
+NCBI datasets是官方开发的命令行小工具，比较方便的下载NCBI数据
+
+https://www.ncbi.nlm.nih.gov/datasets/docs/v1/download-and-install/

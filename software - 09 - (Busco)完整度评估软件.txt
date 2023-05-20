@@ -1,0 +1,8 @@
+数据库： https://busco-data.ezlab.org/v5/data/lineages/
+
+
+./BUSCO/
+	├── file_versions.tsv # 自动生成
+	├── lineages	# 自动生成
+	│   ├── fungi_odb10   #  应该可以自己解压
+	└── └── fungi_odb10.2019-12-13.tar # 下载的压缩包

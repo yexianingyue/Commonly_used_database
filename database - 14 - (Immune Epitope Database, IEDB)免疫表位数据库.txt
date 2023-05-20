@@ -1,0 +1,12 @@
+# IEDB
+## describe
+免疫表位数据库（IEDB）是一个免费的公共资源，其中列出了表征免疫表位的实验。
+
+## website
+https://www.iedb.org/database_export_v3.php
+
+## download
+https://www.iedb.org/downloader.php?file_name=doc/epitope_full_v3.zip
+
+## cite
+https://academic.oup.com/nar/article/47/D1/D339/5144151

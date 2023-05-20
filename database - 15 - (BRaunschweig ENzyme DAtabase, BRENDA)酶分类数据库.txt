@@ -1,0 +1,8 @@
+## website
+https://www.brenda-enzymes.info/all_enzymes.php
+
+## download
+wget -O xxx.html  "https://www.brenda-enzymes.info/all_enzymes.php"
+
+## cite
+https://doi.org/10.1093/nar/gkh081

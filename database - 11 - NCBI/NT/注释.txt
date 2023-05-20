@@ -1,0 +1,3 @@
+https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz
+https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.gz
+https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip

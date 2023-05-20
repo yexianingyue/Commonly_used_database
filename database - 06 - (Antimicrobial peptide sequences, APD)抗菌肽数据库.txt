@@ -1,0 +1,16 @@
+# APD3
+官方网址: https://aps.unmc.edu/downloads
+文章：https://doi.org/10.1093/nar/gkv1278  (还给出了抗菌肽的一下分类)
+
+## 下载
+wget "https://aps.unmc.edu/assets/sequences/APD_sequence_release_09142020.fasta" -O APD-20230203.fasta
+
+## 去除一些特殊字符
+sed -i 's/¨C/-/;s/®//;s/™//' APD-20230203.fasta 
+
+## 建库
+makeblastdb -in APD-20230203.fasta -dbtype prot -out APD3-20220203 
+
+## 使用reads进行比对
+seqkit fq2fa /share/data3/zhangy2/2021meta/01.clean/BD_PRJNA431482/SRR6517765.1.fq.gz | blastx  -query -  -query_gencode 11 -db APD3-20220203 -out test -evalue 1e-5 -outfmt 6 -num_threads 40
+

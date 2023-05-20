@@ -1,0 +1,6 @@
+checkm
+依赖：
+	prodigal
+	hmmer
+	pplacer # 下载二进制可执行文件就行
+	以及一个数据库***

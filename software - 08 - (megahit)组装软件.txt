@@ -1,0 +1,1 @@
+/home/workspace/software/megahit-master/megahit -1 $out.1.fq.gz -2 $out.2.fq.gz --k-list 21,41,61,81,101,121,141 -o $out --out-prefix $out

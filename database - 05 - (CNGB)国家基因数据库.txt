@@ -1,0 +1,7 @@
+最后面的不知道是什么，但是可以更改显示的样本数量，改到很大，然后就可以获取下载链接了
+wget -O CNP0001162.path.json "https://db.cngb.org/cnsa/ajax/run_tableview/?draw=2&start=0&length=100&sSearch=&q=CNP0001162&_=1665128532495"
+cat CNP0001162.path.json | jq | grep CNP0001162 | grep http | grep -v link | perl -ne 'chomp;$_=~/.*?(:.*)"/; print "wget -c \"ftp$1/*R1_001.fastq.gz\"\n"' > run.sh
+parallel --joblog run.log -j 3 < run.sh
+
+
+wget --spider  -np -nd -L -r "ftp://ftp.cngb.org/pub/CNSA/data3/CNP0000284/"  > log 2>&1 &

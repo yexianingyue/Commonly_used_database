@@ -1,0 +1,6 @@
+根据project编号下载序列
+
+
+```shell 
+wget "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=$1&result=read_run&fields=study_accession,sample_accession,run_accession,scientific_name,library_layout,fastq_aspera&format=tsv&download=true" -O $1.tsv
+```

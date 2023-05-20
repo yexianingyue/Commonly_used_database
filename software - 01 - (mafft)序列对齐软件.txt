@@ -1,0 +1,31 @@
+# MAFFT
+
+## 作用
+
+1、对其序列
+
+## 安装方法
+
+1、下载源码
+https://mafft.cbrc.jp/alignment/software/source.html
+https://mafft.cbrc.jp/alignment/software/installation_without_root.html
+
+2、解压
+tar -xzvf mafft-x.xxx-with-extensions.tgz
+cd  mafft-x.xxx-with-extensions/core/
+vim Makefile
+
+```
+From:
+PREFIX = /usr/local
+To:
+PREFIX = /home/your_home/somewhere (must be absolute path)
+
+From:
+BINDIR = $(PREFIX)/bin
+To:
+BINDIR = /home/your_home/bin (or elsewhere in your command-search path)
+```
+
+make 
+make install

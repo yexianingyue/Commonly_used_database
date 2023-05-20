@@ -1,0 +1,17 @@
+1、先下载五个大类的列表
+
+/share/data1/zhangy/database/cazy/anno/enzyms
+
+mwget -n 32 http://www.cazy.org/Glycoside-Hydrolases.html -f GH.html
+less GH.html | perl -e '$n=0;while(<>){chhomp;if ($_=~/Family Number/){$n=1;next};if ($n == 1){while ($_=~/href="(.*?)"/g){print "$1\n" if ($1 ne "GH0.html")};last}}' > list
+mwget -n 32 http://www.cazy.org/GlycosylTransferases.html -f GT.html 
+less GT.html  | perl -e '$n=0;while(<>){chhomp;if ($_=~/Family Number/){$n=1;next};if ($n == 1){while ($_=~/href="(.*?)"/g){print "$1\n" if ($1 ne "GT0.html")};last}}' >> list
+mwget -n 32 http://www.cazy.org/Polysaccharide-Lyases.html -f PL.html
+less PL.html | perl -e '$n=0;while(<>){chhomp;if ($_=~/Family Number/){$n=1;next};if ($n == 1){while ($_=~/href="(.*?)"/g){print "$1\n" if ($1 ne "PL.html")};last}}' >> list
+mwget -n 32 http://www.cazy.org/Carbohydrate-Esterases.html -f CE.html
+less CE.html | perl -e '$n=0;while(<>){chhomp;if ($_=~/Family Number/){$n=1;next};if ($n == 1){while ($_=~/href="(.*?)"/g){print "$1\n" if ($1 ne "CE0.html")};last}}' >> list
+mwget -n 32 http://www.cazy.org/Auxiliary-Activities.html -f AA.html
+less AA.html | perl -e '$n=0;while(<>){chhomp;if ($_=~/Family Number/){$n=1;next};if ($n == 1){while ($_=~/href="(.*?)"/g){print "$1\n" if ($1 ne "AA0.html")};last}}' >> list
+
+
+cat list | parallel -j 10  mwget -n 32 http://www.cazy.org/{} -f ./enzyms/{}

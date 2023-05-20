@@ -1,0 +1,11 @@
+https://www.nvidia.cn/geforce/drivers/
+
+
+# 刷新缓存
+ipconfig /flushDNS
+
+刷机必装软件：
+quicklook   
+zotero    # https://github.com/mronkko/ZoteroQuickLook/releases/tag/1.4.2  下载后拖拽到插件中即可实现预览,zotero更新后这个插件没用了
+listary
+GifCam / ScreenToGif # 录制gif软件

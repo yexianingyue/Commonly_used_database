@@ -1,0 +1,3 @@
+https://www.uniprot.org/downloads#unireflink
+
+fasp-ebi@fasp.sra.ebi.ac.uk:databases/uniprot/current_release/uniref/uniref90/uniref90.fasta.gz

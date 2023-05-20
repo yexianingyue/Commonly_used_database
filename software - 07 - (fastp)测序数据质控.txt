@@ -1,0 +1,2 @@
+### for 150PE sequencing.
+/home/workspace/project/fungi_2019/bin/fastp -i $fq1 -I $fq2 -q 20 -u 30 -n 5 -y -Y 30 -l 90 --trim_poly_g -o $out.1.fq.gz -O $out.2.fq.gz -w 4 2> $out.log 

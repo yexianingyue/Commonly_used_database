@@ -1,0 +1,9 @@
+INFERNAL
+## describe
+Infernal(INFERence of RNA ALignment)是用于搜索DNA序列数据库中的RNA结构和序列相似性
+
+## download
+https://github.com/EddyRivasLab/infernal
+
+## cite
+https://academic.oup.com/bioinformatics/article/25/10/1335/270663

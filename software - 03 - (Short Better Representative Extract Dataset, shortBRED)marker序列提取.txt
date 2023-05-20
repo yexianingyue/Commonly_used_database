@@ -1,0 +1,14 @@
+# shortBRED
+## describe
+用于寻找标志序列的软件，暂时无用武之地，后面需要了再说
+
+## download
+https://github.com/biobakery/shortbred
+
+## cite
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004557
+
+1、不能使用conda安装
+2、需要许多依赖
+3、usearch版本要注意一直
+4、参考数据库就用https://huttenhower.sph.harvard.edu/shortbred提到的，文章所用的，不然太大了
